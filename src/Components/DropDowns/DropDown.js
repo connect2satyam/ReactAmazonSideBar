@@ -7,14 +7,7 @@ function DropDown(props) {
     const [openDropDown, setOpenDropDown] = useState(false);
     const sideNavContainer = useRef(null);
 
-    let arrowDirection = "fas fa-chevron-down";
-
-    if(!openDropDown){
-        arrowDirection = "fas fa-chevron-down";
-    }else{
-        arrowDirection = "fas fa-chevron-up";
-    }
-
+    let arrowDirection = openDropDown ? "fas fa-chevron-up" : "fas fa-chevron-down" ;
 
     return (
         <>
