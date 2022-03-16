@@ -13,7 +13,7 @@ function Sidenav(props) {
         <div className="sidenav" style={props.state === "entering" ? {animation: "moveSideBar .3s forwards"} : props.state === "entered" ? 
         {transform: "translateX(-0px)"} : {animation: "moveSideBar .3s reverse backwards"}}>
             <div className="sidenavHeader">
-            <i className="fas fa-user-circle"></i> Hello, Sign In
+            <i className="fas fa-user-circle"></i> Hello, Satya
             </div>
             <Transition
             in={!subContainer}
